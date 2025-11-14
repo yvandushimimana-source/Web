@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css">
+  <h1 style="color:black;text-align:center;">This is a good location buyer and seller Meeting</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr Ramasa - Online Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f6f7fb;
+  color: #333;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 { margin: 0; font-size: 1.5em; }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+.hero {
+  text-align: center;
+  padding: 5em 1em;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+}
+
+.hero .btn {
+  background: white;
+  color: #2563eb;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn-buy {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>🛍️ Mr Ramasa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart 🛒</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Mr Ramasa Online shopping</h2>
+    <p>Your one-stop shop for quality goods at great prices!</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Mr Ramasa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Mr Ramasa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mr Ramasa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart 🛒</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <body>
+         <img src="watch.png"
+          width="300px" height="200px">
+       <h3>Product 1</h3>
+      <p>$80.00</p>
+      <button onclick="addToCart('Product 1',20)">Add to Cart</button></body>
+    </div>
+    <div class="product">
+      <body>
+         <img src="shirt.png"
+          width="300px" height="200px">   
+       <h3>Product 2</h3>
+      <p>$15.00</p>
+      <button onclick="addToCart('Product 2',25)">Add to Cart</button></body>
+    </div>
+    <div class="product">
+      <body>
+         <img src="bag.png"
+          width="300px" height="200px">
+       <h3>Product 3</h3>
+      <p>$20.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+    </div>
+     <div class="product">
+      <body>
+         <img src="blue.png"
+          width="300px" height="200px">
+       <h3>Product 4</h3>
+      <p>$30.00</p>
+      <button onclick="addToCart('Product 4',35)">Add to Cart</button></body>
+      </div>
+       <div class="product">
+      <body>
+         <img src="boyshort.jpg"
+          width="300px" height="200px">
+       <h3>Product 5</h3>
+      <p>$10.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+    </div>
+     <div class="product">
+      <body>
+         <img src="shirt.avif"
+          width="300px" height="200px">
+       <h3>Product 6</h3>
+      <p>$20.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+    </div>
+     <div class="product">
+      <body>
+         <img src="Cowboy.jpeg"
+          width="300px" height="200px">
+       <h3>Product 7</h3>
+      <p>$20.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+      </div>
+      <div class="product">
+      <body>
+         <img src="jp.avif"
+          width="300px" height="200px">
+       <h3>Product 8</h3>
+      <p>$25.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+      </div>
+      <div class="product">
+      <body>
+         <img src="drip.jpeg"
+          width="300px" height="200px">
+       <h3>Product 9</h3>
+      <p>$15.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+      </div>
+      <div class="product">
+      <body>
+         <img src="jp.avif"
+          width="300px" height="200px">
+       <h3>Product 10</h3>
+      <p>$25.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+      </div>
+      <div class="product">
+      <body>
+         <img src="jp.avif"
+          width="300px" height="200px">
+       <h3>Product 11</h3>
+      <p>$25.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+      </div>
+      <div class="product">
+      <body>
+         <img src="jp.avif"
+          width="300px" height="200px">
+       <h3>Product 12</h3>
+      <p>$25.00</p>
+      <button onclick="addToCart('Product 3',30)">Add to Cart</button></body>
+ </section>
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - Mr Ramasa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mr Ramasa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+    </nav>
+  </header>
+
+  <section class="products" id="cart-items">
+    <h2>Your Cart</h2>
+    <div id="cartList"></div>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function addToCart(name, price) {
+    cart.push({ name, price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " added to cart!");
+  }
+
+  function showCart() {
+    const list = document.getElementById("cartList");
+    if (!list) return;
+
+    list.innerHTML = "";
+    let total = 0;
+    cart.forEach((item, index) => {
+      list.innerHTML += `<p>${item.name} - $${item.price} <button onclick="removeItem(${index})">Remove</button></p>`;
+      total += item.price;
+    });
+    document.getElementById("total").textContent = total.toFixed(2);
+  }
+
+  function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showCart();
+  }
+
+  function checkout() {
+    alert("Checkout coming soon! For now, contact us to complete your order.");
+    localStorage.removeItem("cart");
+    window.location.href = "contact.html";
+  }
+
+  showCart();
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mr Ramasa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mr Ramasa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding:2em;">
+    <h2>Contact Us</h2>
+    <p>Message us on WhatsApp to order or ask any question:</p>
+    <a href="https://wa.me/250798069158" class="btn">📱 Chat on WhatsApp</a>
+  </section>
+</body>
+</html>
